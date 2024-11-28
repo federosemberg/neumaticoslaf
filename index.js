@@ -6,7 +6,10 @@ import OpenAI from 'openai';
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://miappfrontend.com', // Cambia esto por tu dominio frontend
+  methods: ['GET', 'POST', 'OPTIONS'],
+}));
 app.use(express.json());
 
 const openai = new OpenAI({
