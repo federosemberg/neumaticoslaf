@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: 'https://miappfrontend.com', // Cambia esto por tu dominio frontend
+  origin: 'https://laf.venrox.com.ar/', // Cambia esto por tu dominio frontend
   methods: ['GET', 'POST', 'OPTIONS'],
 }));
 app.use(express.json());
